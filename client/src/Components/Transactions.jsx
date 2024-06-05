@@ -80,7 +80,7 @@ const Transactions = () => {
                                         <div className="flex-shrink-0">
                                             <img
                                                 className="w-8 h-8 rounded-full"
-                                                src={`http://localhost:3006/${val.category.image}`}
+                                                src={`https://expensetracker.crafto.live/${val.category.image}`}
                                                 alt="Neil image"
                                             />
                                         </div>
