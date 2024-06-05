@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { signup } from '../Api/UserApi';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { setUserDetails } from '../Store/Slices/UserSlice';
 
 const Signup = () => {
 

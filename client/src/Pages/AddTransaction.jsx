@@ -32,7 +32,7 @@ const AddTransaction = () => {
         if (amount < 0 || amount == 0) {
             toast.error('Enter valid amount!');
             return;
-        } else if (!category.length) {
+        } else if (!category) {
             toast.error('Select a category!');
             return;
         }

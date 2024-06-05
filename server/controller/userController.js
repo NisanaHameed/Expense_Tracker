@@ -19,7 +19,6 @@ export const signup = async (req, res) => {
                 userData.password = hashedPassword;
 
                 let newUser = new userModel(userData);
-
                 await newUser.save();
                 console.log(newUser)
                 let token = jwt.sign({ Id: newUser._id, Name: newUser.name }, process.env.JWT_SECRET, { expiresIn: '30d' });
